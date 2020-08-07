@@ -80,7 +80,7 @@ public class Inscricao {
     public void setCidade(String Cidade){
         this.cidade = cidade;
     }
-    
+
     public void setNumero(String Numero){
         this.numero = numero;
     }

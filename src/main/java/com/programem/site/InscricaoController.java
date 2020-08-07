@@ -22,20 +22,47 @@ public class InscricaoController {
       return "InscricaoForm";
     }
 
-    @PostMapping(path="/insere") // Map ONLY POST Requests
+    @PostMapping(path="/insere") // Requests de tudo
     public @ResponseBody String addNewInscricao (
          @RequestParam String nome
+        ,@RequestParam String email
+        ,@RequestParam String dataDeNascimento
         ,@RequestParam String estado
-        ) {
+        ,@RequestParam String cidade
+        ,@RequestParam String numero
+        ,@RequestParam String identidadeDeGenero
+        ,@RequestParam String orientacaoSexual
+        ,@RequestParam String identidadeEtnico
+        ,@RequestParam String modalidade
+        ,@RequestParam String ano
+        ,@RequestParam String interesseProgramacao
+        ,@RequestParam String estudoPrevio
+        ,@RequestParam String disponibilidade
+        ,@RequestParam String interesseCurso
 
+        ) {
+            //* criação do objeto*/
             Inscricao i = new Inscricao();
 
             i.setNome(nome);
+            i.setEmail(email);
+            i.setDatadenascimento(dataDeNascimento);
             i.setEstado(estado);
+            i.setCidade(cidade);
+            i.setNumero(numero);
+            i.setIdentidadedegenero(identidadeDeGenero);
+            i.setOrientacaosexual(orientacaoSexual);
+            i.setIdentidadeetnico(identidadeEtnico);
+            i.setModalidade(modalidade);
+            i.setAno(ano);
+            i.setInteresseprogramacao(interesseProgramacao);
+            i.setEstudoprevio(estudoPrevio);
+            i.setDisponibilidade(disponibilidade);
+            i.setInteressecurso(interesseCurso);
 
             InscricaoRepository.save(i);
 
-            return nome+" "+estado;
+            return nome+" "+email+" "+dataDeNascimento+" "+estado+" "+cidade+" "+numero+" "+identidadeDeGenero+" "+orientacaoSexual+" "+identidadeEtnico+" "+modalidade+" "+ano+" "+interesseProgramacao+" "+estudoPrevio+" "+disponibilidade+" "+interesseCurso;
     }
 
     @GetMapping(path="/lista")
@@ -44,19 +71,5 @@ public class InscricaoController {
         Iterable<Inscricao> resultado = InscricaoRepository.findAll();
      
         return listaInscricao.listaInscricao(resultado);
-    }
-    @GetMapping(path="/filtro")
-    public @ResponseBody String getInscricao(@RequestParam Integer idade) {
-        
-        Iterable<Inscricao> resultado = InscricaoRepository.findInscricao(idade);
-     
-        return listaInscricao.listaInscricao(resultado);
-  
-    } 
-
-    @GetMapping(path="/filtroForm")
-    public String filtroForm() {
-      return "filtroForm";
-  
     }
 }
