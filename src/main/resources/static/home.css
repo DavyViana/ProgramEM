@@ -1,0 +1,45 @@
+/*********************************************************************************/
+/* NAV BAR CSS FIXO                                                                       */
+/*********************************************************************************/
+.logoprogramem{
+    width: 500px;
+}
+
+#header
+{
+	background: #045a68;
+}
+#menu ul
+{
+	margin: 0;
+	padding: 5px;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+#menu li
+{
+	display: inline-block;
+}	
+#menu a
+{
+	display: block;
+	padding: 1em 2em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 700;
+	color: #FFF;
+}
+
+/*APLICAÇÃO DE BORDA NO BOTÃO*/
+#menu .current_page_item a
+{
+	border-radius: 30px;
+	border: 1px solid;
+	border-color: rgba(255,255,255,.2);
+}
+
+
+
