@@ -11,19 +11,12 @@ public class Inscricao {
     @GeneratedValue(strategy=GenerationType.AUTO)
     
     /**         Informações gerais               */
-    
     private Integer id;
-
     String nome;
-
     String email;
-
     String dataDeNascimento;
-
     String estado;
-
     String cidade;
-
     Integer numero;
 
     /**         Informações pessoais              */

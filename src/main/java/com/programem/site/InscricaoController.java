@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/inscricao")
+@RequestMapping("/")
 public class InscricaoController {
 
     @Autowired
@@ -19,7 +19,7 @@ public class InscricaoController {
 
     @GetMapping("/")
     public String InscricaoForm(){
-      return "InscricaoForm";
+      return "inscricaoForm";
     }
 
     @PostMapping(path="/insere") // Requests de tudo
