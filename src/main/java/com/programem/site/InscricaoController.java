@@ -29,7 +29,7 @@ public class InscricaoController {
         ,@RequestParam String dataDeNascimento
         ,@RequestParam String estado
         ,@RequestParam String cidade
-        ,@RequestParam String numero
+        ,@RequestParam Integer numero
         ,@RequestParam String identidadeDeGenero
         ,@RequestParam String orientacaoSexual
         ,@RequestParam String identidadeEtnico
@@ -50,13 +50,13 @@ public class InscricaoController {
             i.setEstado(estado);
             i.setCidade(cidade);
             i.setNumero(numero);
-            i.setIdentidadedegenero(identidadeDeGenero);
-            i.setOrientacaosexual(orientacaoSexual);
-            i.setIdentidadeetnico(identidadeEtnico);
+            i.setIdentidadeDeGenero(identidadeDeGenero);
+            i.setOrientacaoSexual(orientacaoSexual);
+            i.setIdentidadeEtnico(identidadeEtnico);
             i.setModalidade(modalidade);
             i.setAno(ano);
-            i.setInteresseprogramacao(interesseProgramacao);
-            i.setEstudoprevio(estudoPrevio);
+            i.setInteresseProgramacao(interesseProgramacao);
+            i.setEstudoPrevio(estudoPrevio);
             i.setDisponibilidade(disponibilidade);
             i.setInteressecurso(interesseCurso);
 

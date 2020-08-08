@@ -12,17 +12,17 @@ public class Inscricao {
     
     /**         Informações gerais               */
     private Integer id;
-    String nome;
-    String email;
-    String dataDeNascimento;
-    String estado;
-    String cidade;
-    Integer numero;
+    private String nome;
+    private String email;
+    private String dataDeNascimento;
+    private String estado;
+    private String cidade;
+    private Integer numero;
 
     /**         Informações pessoais              */
     /**         Identidade de gênero              */
 
-    String identidaDeGenero;
+    String identidadeDeGenero;
 
     /**         Orientação sexual                 */
 
@@ -48,7 +48,7 @@ public class Inscricao {
 
     String interesseCurso;
     
-    /**              SetInfoGeral                          */
+    /*SET INFO GERAL*/
 
     public void setId(Integer id){
         this.id = id;
@@ -62,70 +62,70 @@ public class Inscricao {
         this.email = email;
     }
 
-    public void setDatadenascimento(String Datadenascimento){
+    public void setDatadenascimento(String dataDeNascimento){
         this.dataDeNascimento = dataDeNascimento;
     }
 
-    public void setEstado(String Estado){
+    public void setEstado(String estado){
         this.estado = estado;
     }
 
-    public void setCidade(String Cidade){
+    public void setCidade(String cidade){
         this.cidade = cidade;
     }
 
-    public void setNumero(String Numero){
+    public void setNumero(Integer numero){
         this.numero = numero;
     }
 
-    /**              SetInfoPessoal           */
-    /**              SetIdenGenero               */
+    /*SET INFO PESSOAL*/
+    /*IDENTIDADE DE GENERO*/
 
-    public void setIdentidadedegenero(String Identidadedegenero){
-        this.identidaDeGenero = identidaDeGenero;
+    public void setIdentidadeDeGenero(String identidadeDeGenero){
+        this.identidadeDeGenero = identidadeDeGenero;
     }
 
-    /**              SetIdenSex                  */
+    /*ORIENTAÇÃO SEXUAL*/
 
-    public void setOrientacaosexual(String Orientacaosexual){
+    public void setOrientacaoSexual(String orientacaoSexual){
         this.orientacaoSexual = orientacaoSexual;
     }
 
-    /**              SetIdenEtnico                  */
+    /*IDENTIDADE ETNICO*/
     
-    public void setIdentidadeetnico(String Identidadeetnico){
+    public void setIdentidadeEtnico(String identidadeEtnico){
         this.identidadeEtnico = identidadeEtnico;
     }
 
-    /**              SetEscolaridade                  */
+    /*ESCOLARIDADE*/
 
-    public void setModalidade(String Modalidade){
+    public void setModalidade(String modalidade){
         this.modalidade = modalidade;
     }
 
-    public void setAno(String Ano){
+    public void setAno(String ano){
         this.ano = ano;
     }
 
-    /**         Programação                       */
+    /*PROGRAMAÇÃO*/
 
-    public void setInteresseprogramacao(String Interesseprogramacao){
+    public void setInteresseProgramacao(String interesseProgramacao){
         this.interesseProgramacao = interesseProgramacao;
     }
 
-    public void setEstudoprevio(String Estudoprevio){
+    public void setEstudoPrevio(String estudoPrevio){
         this.estudoPrevio = estudoPrevio;
     }
 
-    public void setDisponibilidade(String Disponibilidade){
+    public void setDisponibilidade(String disponibilidade){
         this.disponibilidade = disponibilidade;
     }
 
-    public void setInteressecurso(String Interessecurso){
+    public void setInteressecurso(String interesseCurso){
         this.interesseCurso = interesseCurso;
     }
-
-    /**                GetInfoGeral              */
+    /*INICIO GET*/
+    /*INFORMAÇÃO GERAL*/
     public Integer getId(){
         return this.id;
     }
@@ -133,7 +133,9 @@ public class Inscricao {
     public String getNome(){
         return this.nome;
     }
-
+    public String getEmail(){
+        return this.email;
+    }
     public String getDatadenascimento(){
         return this.dataDeNascimento;
     }
@@ -153,7 +155,7 @@ public class Inscricao {
     /**Identidade de genero         */
     
     public String getIdentidadedegenero(){
-        return this.identidaDeGenero;
+        return this.identidadeDeGenero;
     }
 
     /**Identidade de sexual         */
