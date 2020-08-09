@@ -17,8 +17,8 @@ public class InscricaoController {
     
     private ListaInscricao listaInscricao = new ListaInscricao();
 
-    @GetMapping("/inscricao")
-    public String InscricaoForm(){
+    @GetMapping("/")
+    public String inscricaoForm(){
       return "inscricaoForm";
     }
 
