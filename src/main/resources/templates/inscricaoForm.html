@@ -93,13 +93,40 @@
                 <input class="form-control" id="dataDeNascimento" name="dataDeNascimento" type="date" required>
             </div>
             <!--Estado-->
-            <div class="form-group">
-                <label class="form-label" for="estado">Estado</label>
-                <input class="form-control" id="estado" name="estado" placeholder="UF" required max="2">
-            </div>
+            <label class="my-1 mr-2" for="estado">Estado:</label>
+            <select class="custom-select my-1 mr-sm-2" id="estado" name="estado" required>
+                <option value="" disabled selected>Escolha...</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
             <!--Cidade-->
             <div class="form-group">
-                <label class="form-label" for="cidade">Cidade</label>
+                <label class="form-label" for="cidade">Cidade:</label>
                 <input class="form-control" id="cidade" name="cidade" placeholder="Sua cidade" required>
             </div>
             <!--Número-->
@@ -110,7 +137,7 @@
 
             <!------------------------------INFORMAÇÕES PESSOAIS--------------------------------->
             <!--Identidade De Genero-->
-            <label class="my-1 mr-2" for="identidadeDeGenero">Identidade De Genero</label>
+            <label class="my-1 mr-2" for="identidadeDeGenero">Identidade De Genero:</label>
             <select class="custom-select my-1 mr-sm-2" id="identidadeDeGenero" name="identidadeDeGenero" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="Gênero Fluido">Gênero Fluido</option>
@@ -121,7 +148,7 @@
                 <option value="Outr@">Outr@</option>
             </select>
             <!--Orientação sexual-->
-            <label class="my-1 mr-2" for="orientacaoSexual">Orientação sexual</label>
+            <label class="my-1 mr-2" for="orientacaoSexual">Orientação sexual:</label>
             <select class="custom-select my-1 mr-sm-2" id="orientacaoSexual" name="orientacaoSexual" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="Assexual">Assexual</option>
@@ -133,7 +160,7 @@
                 <option value="Outr@">Outr@</option>
             </select>
             <!--Identidade Étnico racial-->
-            <label class="my-1 mr-2" for="identidadeEtnicoRacial">Identidade Étnico racial</label>
+            <label class="my-1 mr-2" for="identidadeEtnicoRacial">Identidade Étnico racial:</label>
             <select class="custom-select my-1 mr-sm-2" id="identidadeEtnicoRacial" name="identidadeEtnicoRacial"
                 required>
                 <option value="" disabled selected>Escolha...</option>
@@ -148,7 +175,7 @@
 
             <!---------------------------------ESCOLARIDADE------------------------------------>
             <!--Modalidade de ensino médio-->
-            <label class="my-1 mr-2" for="modalidadeDeEnsinoMedio">Modalidade de ensino médio</label>
+            <label class="my-1 mr-2" for="modalidadeDeEnsinoMedio">Modalidade de ensino médio:</label>
             <select class="custom-select my-1 mr-sm-2" id="modalidadeDeEnsinoMedio" name="modalidadeDeEnsinoMedio"
                 required>
                 <option value="" disabled selected>Escolha...</option>
@@ -157,7 +184,7 @@
                 <option value="EM técnico - estudo em escola técnica">EM técnico - estudo em escola técnica</option>
             </select>
             <!--Ano-->
-            <label class="my-1 mr-2" for="ano">Ano</label>
+            <label class="my-1 mr-2" for="ano">Ano:</label>
             <select class="custom-select my-1 mr-sm-2" id="ano" name="ano" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="1º Ano">1º Ano</option>
