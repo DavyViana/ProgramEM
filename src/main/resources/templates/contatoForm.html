@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Novo Contato</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="/contato/css/contato.css">
+    </head>
+    <body>
+        <div class="row">
+            <nav class="navbar fixed-top" style="background-color: #ebebeb">
+                <div class="col">
+                    <img style="width: 300px;" class="logoprogramem" src="/contato/img/logo.png">
+                </div>
+                <div class="col-">
+                    <a href="/"><button type="button" class="botao">Home</button></a>
+                </div>
+                <div class="col-">
+                    <a href="/sobre"><button type="button" class="botao">Sobre</button></a>
+                </div>
+                <div class="col-">
+                    <a href="/inscricao"><button type="button" class="botao">Inscrição</button></a>
+                </div>
+                <div class="col-">
+                    <a href="/contato"><button type="button" class="botao">Contato</button></a>
+                </div>
+                <div class="col-">
+                    <a href="/areaDoAluno"><button type="button" class="botao" id="aluno">Área do aluno</button></a>
+                </div>
+            </nav>
+            </nav>
+        </div>
+        <div>
+        <div class="formulario">
+            <h1>Novo Contato :)</h1>
+            <form action = "/contatoInsere" method="post">
+                
+                <!---------------------------------CONTATOS-------------------------------->
+                <!--Nome-->
+                <div class="form-group">
+                    <label class="form-label" for="nome">Nome:</label>
+                    <input class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <!--Email-->
+                <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" id="email" name="email" placeholder="Seu email" required>
+                </div>
+                <!--Contato-->
+                <label class="my-1 mr-2" for="contato">Opção de contato</label>
+                <select class="custom-select my-1 mr-sm-2" id="contato" name="contato" required>
+                  <option value="" disabled selected>Escolha sua opção de contato :)</option>
+                  <option value="PalestrEM">PalestrEM</option>
+                  <option value="Dúvidas sobre o projeto">Dúvidas sobre o projeto</option>
+                </select>
+                <!--Campo para colocar as duvidas-->
+                <div class="form-group">
+                    <label for="duvida">Digite aqui...</label>
+                    <textarea class="form-control" id="duvida" name="duvida" rows="3"></textarea>
+                </div>
+                <!-----------------------------BOTÕES DE ENVIAR E LIMPAR------------------------------------>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar"><br>
+            </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
