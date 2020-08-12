@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class InscricaoController {
@@ -20,7 +19,7 @@ public class InscricaoController {
 
     @PostMapping(path="/inscricaoInsere") 
     
-    public @ResponseBody String addNewInscricao (
+    public String addNewInscricao (
       @RequestParam String nome, 
       @RequestParam String email,
       @RequestParam String dataDeNascimento,
@@ -54,7 +53,7 @@ public class InscricaoController {
     Inscricao.setDisponibilidade(disponibilidade);
     Inscricao.setPorqueInteresse(porqueInteresse);
     InscricaoRepository.save(Inscricao);
-      return nome + " " + email + " " + dataDeNascimento + " " + estado + " " + cidade + " " + numero + " " + identidadeDeGenero + " " + orientacaoSexual + " " + identidadeEtnicoRacial + " " + modalidadeDeEnsinoMedio + " " + ano + " " + interesse + " " + estudou + " " + disponibilidade + " " + porqueInteresse;
+      return "/respostainscricao";
     }
 }
 
