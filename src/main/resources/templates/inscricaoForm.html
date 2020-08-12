@@ -21,19 +21,19 @@
                 <img style="width: 300px;" class="logoprogramem" src="/inscricao/img/logo.png">
             </div>
             <div class="col-">
-                <a href="/"><button type="button" class="botao">Home</button></a>
+                <a href="/"><button type="button" class="botao btn btn-light">Home</button></a>
             </div>
             <div class="col-">
-                <a href="/sobre"><button type="button" class="botao">Sobre</button></a>
+                <a href="/sobre"><button type="button" class="botao btn btn-light">Sobre</button></a>
             </div>
             <div class="col-">
-                <a href="/inscricao"><button type="button" class="botao">Inscrição</button></a>
+                <a href="/inscricao"><button type="button" class="botao btn btn-light">Inscrição</button></a>
             </div>
             <div class="col-">
-                <a href="/contato"><button type="button" class="botao">Contato</button></a>
+                <a href="/contato"><button type="button" class="botao btn btn-light">Contato</button></a>
             </div>
             <div class="col-">
-                <a href="/areaDoAluno"><button type="button" class="botao" id="aluno">Área do aluno</button></a>
+                <a href="/areaDoAluno"><button type="button" class="botao btn btn-light" id="aluno">Área do aluno</button></a>
             </div>
         </nav>
         </nav>
@@ -57,15 +57,17 @@
             </div>
             <!--TEXTO-->
             <div class="col texto">
-                <p id="p1">
-                    Para fazer parte do ProgramEM você não precisa ter <b>nenhuma experiência</b> prévia ou pré
-                    requisito em programação, basta ser estudante ou recém formado do Ensino Médio em escola pública e ter muita
-                    vontade, disponibilidade de tempo e interesse em aprender coisas novas.</p><br>
-
-                <p>Nosso currículo técnico é baseado em 35 horas semanais, portanto, pedimos que você separe esse
-                    momento para aprender conosco e se engajar no conteúdo.
-                </p>
+                <p id="p1" class="textochome" style="text-align: justify; margin-right: 20px;">
+                    <b>Ok, 1 segundo...</b> Vc já leu o nosso regulamento? Ué como assim você veio se inscrever sem ler o regulamento? já pensou na hipótese de sermos <b>traficantes internacionais</b> de jovens e estamos pedindo seus dados para um possível sequestro? Pois é, segue abaixo o <b>link do regulamento</b> para você mesmo tirar suas conclusões sobre quem somos e decidir se vai topar ou não ser traficado, quer dizer, ser selecionado para estar conosco <b>durante esses 2 meses.</b></p>
+                <p>
             </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <a href="https://drive.google.com/file/d/1KOZsuxHiHgPqL7bg3O4teCoJ79zfFCbN/view?usp=sharing"><button type="button" class="botaotexto btn btn-info" style="margin-top: -30px;">Link do Regulamento</button></a>
+            </div>
+            <div class="col"></div>
         </div>
     </div>
     <!--FIM CONTEUDO-->
@@ -73,27 +75,27 @@
 
     <!--INICIO FORM-->
     <div class="container-lg formulario">
-        <h1 id="tituloform">Nova Inscricao :)</h1>
+        <h1 id="tituloform">Nova Inscrição :)</h1>
         <form action="/inscricaoInsere" method="post">
 
             <!-------------------------------INFORMAÇÕES GERAIS---------------------------------->
             <!--Nome-->
             <div class="form-group">
-                <label class="form-label" for="nome">Nome:</label>
-                <input class="form-control" id="nome" name="nome" placeholder="Seu nome completo" required>
+                <label class="form-label conteudoform" for="nome">Nome:</label>
+                <input class="form-control inform" id="nome" name="nome" placeholder="Seu nome completo" required>
             </div>
             <!--Email-->
             <div class="form-group">
-                <label class="form-label" for="email">Email:</label>
+                <label class="form-label conteudoform" for="email">Email:</label>
                 <input class="form-control" id="email" name="email" placeholder="Seu email" required>
             </div>
             <!--Data de Nascimento-->
             <div class="form-group">
-                <label class="form-label" for="dataDeNascimento">Data de Nascimento:</label>
+                <label class="form-label conteudoform" for="dataDeNascimento">Data de Nascimento:</label>
                 <input class="form-control" id="dataDeNascimento" name="dataDeNascimento" type="date" required>
             </div>
             <!--Estado-->
-            <label class="my-1 mr-2" for="estado">Estado:</label>
+            <label class="my-1 mr-2 conteudoform" for="estado">Estado:</label>
             <select class="custom-select my-1 mr-sm-2" id="estado" name="estado" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="AC">AC</option>
@@ -126,18 +128,18 @@
             </select>
             <!--Cidade-->
             <div class="form-group">
-                <label class="form-label" for="cidade">Cidade:</label>
+                <label class="form-label conteudoform" for="cidade">Cidade:</label>
                 <input class="form-control" id="cidade" name="cidade" placeholder="Sua cidade" required>
             </div>
             <!--Número-->
             <div class="form-group">
-                <label class="form-label" for="numero">Número:</label>
+                <label class="form-label conteudoform" for="numero">Número:</label>
                 <input class="form-control" id="numero" name="numero" placeholder="Ex:(99)99999-9999" required>
             </div>
 
             <!------------------------------INFORMAÇÕES PESSOAIS--------------------------------->
             <!--Identidade De Genero-->
-            <label class="my-1 mr-2" for="identidadeDeGenero">Identidade De Genero:</label>
+            <label class="my-1 mr-2 conteudoform" for="identidadeDeGenero">Identidade De Genero:</label>
             <select class="custom-select my-1 mr-sm-2" id="identidadeDeGenero" name="identidadeDeGenero" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="Gênero Fluido">Gênero Fluido</option>
@@ -148,7 +150,7 @@
                 <option value="Outr@">Outr@</option>
             </select>
             <!--Orientação sexual-->
-            <label class="my-1 mr-2" for="orientacaoSexual">Orientação sexual:</label>
+            <label class="my-1 mr-2 conteudoform" for="orientacaoSexual">Orientação sexual:</label>
             <select class="custom-select my-1 mr-sm-2" id="orientacaoSexual" name="orientacaoSexual" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="Assexual">Assexual</option>
@@ -160,7 +162,7 @@
                 <option value="Outr@">Outr@</option>
             </select>
             <!--Identidade Étnico racial-->
-            <label class="my-1 mr-2" for="identidadeEtnicoRacial">Identidade Étnico racial:</label>
+            <label class="my-1 mr-2 conteudoform" for="identidadeEtnicoRacial">Identidade Étnico racial:</label>
             <select class="custom-select my-1 mr-sm-2" id="identidadeEtnicoRacial" name="identidadeEtnicoRacial"
                 required>
                 <option value="" disabled selected>Escolha...</option>
@@ -175,7 +177,7 @@
 
             <!---------------------------------ESCOLARIDADE------------------------------------>
             <!--Modalidade de ensino médio-->
-            <label class="my-1 mr-2" for="modalidadeDeEnsinoMedio">Modalidade de ensino médio:</label>
+            <label class="my-1 mr-2 conteudoform" for="modalidadeDeEnsinoMedio">Modalidade de ensino médio:</label>
             <select class="custom-select my-1 mr-sm-2" id="modalidadeDeEnsinoMedio" name="modalidadeDeEnsinoMedio"
                 required>
                 <option value="" disabled selected>Escolha...</option>
@@ -184,7 +186,7 @@
                 <option value="EM técnico - estudo em escola técnica">EM técnico - estudo em escola técnica</option>
             </select>
             <!--Ano-->
-            <label class="my-1 mr-2" for="ano">Ano:</label>
+            <label class="my-1 mr-2 conteudoform" for="ano">Ano:</label>
             <select class="custom-select my-1 mr-sm-2" id="ano" name="ano" required>
                 <option value="" disabled selected>Escolha...</option>
                 <option value="1º Ano">1º Ano</option>
@@ -196,7 +198,7 @@
 
             <!----------------------------------PROGRAMAÇÃO----------------------------------->
             <!--Já tinha interesse por programação?-->
-            <legend class="col-form-label">Já tinha interesse por programação?</legend>
+            <legend class="col-form-label conteudoform">Já tinha interesse por programação?</legend>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="interesse" id="interesse"
                     value="Já tinha muito interesse" required>
@@ -213,7 +215,7 @@
                 <label class="form-check-label" for="interesse">Nunca tinha pensado nisso antes</label>
             </div>
             <!--Já estudou programação?-->
-            <legend class="col-form-label">Já estudou programação?</legend>
+            <legend class="col-form-label conteudoform">Já estudou programação?</legend>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="estudou" id="estudou" value="Sim, sei mexer bastante"
                     required>
@@ -230,7 +232,7 @@
                 <label class="form-check-label" for="estudou">Não sei nem por onde começar</label>
             </div>
             <!--Qual e sua disponibilidade de horário para fazer o curso?-->
-            <label class="my-1 mr-2" for="disponibilidade">Qual e sua disponibilidade de horário para fazer o
+            <label class="my-1 mr-2 conteudoform" for="disponibilidade">Qual e sua disponibilidade de horário para fazer o
                 curso?</label>
             <select class="custom-select my-1 mr-sm-2" id="disponibilidade" name="disponibilidade">
                 <option value="" disabled selected>Escolha...</option>
@@ -242,14 +244,14 @@
                 <option value="Todas as opções">Todas as opções</option>
             </select>
             <!--Porque você se interessou em fazer o programEM?-->
-            <div class="form-group">
+            <div class="form-group conteudoform">
                 <label for="porqueInteresse">Porque você se interessou em fazer o programEM?</label>
-                <textarea class="form-control" id="porqueInteresse" name="porqueInteresse" rows="3"></textarea>
+                <textarea class="form-control" id="porqueInteresse" name="porqueInteresse" rows="3" placeholder="Digite com carinho :)"></textarea>
             </div>
 
             <!-----------------------------BOTÕES DE ENVIAR E LIMPAR------------------------------------>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar"><br>
+            <input class="botaoslide btn btn-light" type="submit" value="Enviar">
+            <input class="botaoslide btn btn-danger" type="reset" value="Limpar"><br>
         </form>
     </div>
     <!--FIM FORM-->
