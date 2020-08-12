@@ -62,6 +62,7 @@ body{
 }
 .botaoslide{
     background-color: #045a68;
+    margin-bottom: 10px;
 }
 .botaoslide:before{
     content: '';
