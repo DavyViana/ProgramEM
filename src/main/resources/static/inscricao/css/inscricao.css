@@ -46,6 +46,46 @@ body{
     font-size: 25px;
     font-family: inter;
 }
+.textochome{
+    margin-top: 30px;
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+    font-family: inter;
+}
+.botaotexto{
+    text-align: center;
+    font-family: inter;
+    font-weight: 800;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.botaotexto{
+    background-color: #045a68;
+}
+.botaotexto:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+.botaotexto:hover:before{
+    width: 100%;
+}
 /*Começo formulario*/
 #tituloform{
 	color: #045a68;
@@ -56,4 +96,47 @@ body{
 .formulario{
 	margin-top: 50px;
 	color: black;
+}
+.conteudoform{
+    color: #045a68;
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 900;
+}
+.inform{
+    color: black;
+}
+/*BOTÃO slide*/
+.botaoslide{
+    font-family: inter;
+    font-weight: 800;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.botaoslide{
+    background-color: #045a68;
+    margin-bottom: 10px;
+}
+.botaoslide:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+.botaoslide:hover:before{
+    width: 100%;
 }
