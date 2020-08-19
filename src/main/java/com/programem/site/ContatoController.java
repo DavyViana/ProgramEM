@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class ContatoController{
@@ -20,7 +19,7 @@ public class ContatoController{
 
     @PostMapping(path="/contatoInsere") 
     
-    public @ResponseBody String addNewContato (
+    public String addNewContato (
       @RequestParam String nome, 
       @RequestParam String email,
       @RequestParam String contato,
@@ -32,7 +31,7 @@ public class ContatoController{
     Contato.setContato(contato);
     Contato.setDuvida(duvida);
     ContatoRepository.save(Contato);
-      return nome + " " + email + " " + contato + " " + duvida;
+      return "/respostacontato";
     }
 }
 
